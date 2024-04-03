@@ -1,0 +1,36 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Password Reset Email Sent{% endblock %}
+
+{% block body %}
+
+    <section id="page-check-email" class="bg-gray-50 dark:bg-gray-900">
+        <div class="flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0">
+            <a href="{{ path('app_home') }}" class="flex items-center mb-6 text-2xl font-semibold text-gray-900 dark:text-white">
+                <img class="w-8 h-8 mr-2" src="{{ asset('images/logo-square.svg') }}" alt="logo">
+                {{ app_company }}
+            </a>
+            <div class="w-full p-6 bg-white rounded-lg shadow dark:border md:mt-0 sm:max-w-2xl dark:bg-gray-800 dark:border-gray-700 sm:p-8">
+                <h1 class="mb-1 text-xl font-bold leading-tight tracking-tight text-gray-900 md:text-2xl dark:text-white">
+                    Password Reset Email Sent
+                </h1>
+
+                <p>
+                    If an account matching your email exists, then an email was just sent that contains a link that you can use to reset your password.
+                    This link will expire in {{ resetToken.expirationMessageKey|trans(resetToken.expirationMessageData, 'ResetPasswordBundle') }}.
+                </p>
+                <p>If you don't receive an email please check your spam folder or <a href="{{ path('app_forgot_password_request') }}">try again</a>.</p>
+
+                <br>
+
+                <p class="text-sm font-light text-gray-500 dark:text-gray-400">
+                    <a href="{{ path('app_login') }}" class="font-medium text-primary-600 hover:underline dark:text-primary-500">
+                        Return to login
+                    </a>
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+{% endblock %}

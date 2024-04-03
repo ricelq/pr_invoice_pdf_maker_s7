@@ -1,0 +1,10 @@
+vich_uploader:
+    db_driver: orm
+
+    mappings:
+        invoice_logo:
+            uri_prefix: '%app.uploads.invoice_logo%'
+            upload_destination: '%kernel.project_dir%/public%app.uploads.invoice_logo%'
+            namer: Vich\UploaderBundle\Naming\SmartUniqueNamer
+
+
