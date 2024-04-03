@@ -119,6 +119,6 @@ Clone this repository to your local machine:
 
 Ricel Quispe - [@linkedin](https://www.linkedin.com/in/ricelquispe) - ricel@prodeimat.ch
 
-Project Link: [https://github.com/ricelq/pr_easyadmin_backoffice_s7](https://github.com/ricelq/pr_easyadmin_backoffice_s7)
+Project Link: [https://github.com/ricelq/pr_invoice_pdf_maker_s7](https://github.com/ricelq/pr_invoice_pdf_maker_s7)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
